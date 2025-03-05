@@ -13,4 +13,10 @@ public class test{
         result = ts.updaeStatus("success");
         self.assertEqual(expected,result);
     }
+    def test_isoverdue(){
+        Task ts = new Task();
+        expected= "Yes";
+        result = ts.isoverdue(ts.taskname);
+        self.assertEqual(expected,result);
+    }
 }
