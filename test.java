@@ -7,4 +7,10 @@ public class test{
         result = ts.assignto("Dhruv");
         self.assertEqual(expected,result);
     }
+    def test_status(){
+        Task ts = new Task();
+        expected= "success";
+        result = ts.updaeStatus("success");
+        self.assertEqual(expected,result);
+    }
 }
